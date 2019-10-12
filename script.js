@@ -58,7 +58,7 @@ loadReminders();
 
 function loadReminders() 
 {
-	if (window.localStorage.getItem("textarea9AM") !=== null
+	if (window.localStorage.getItem("textarea9AM") !== null
 	    {
 	    	document.getElementById("textarea9AM").value = localStorage.getItem("textarea9AM");
 		document.getElementById("demo2").innerHTML = "textarea9AM local storage NOT null";
