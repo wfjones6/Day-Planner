@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 /* Create three unequal columns that float next to each other */
 .column {
   float: left;
