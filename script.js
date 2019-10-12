@@ -54,19 +54,12 @@ btn5PM.addEventListener('click', function()
     	document.getElementById("demo").innerHTML = x;
 })
 
+document.getElementById("demo").innerHTML = "Demo start";
 document.getElementById("demo2").innerHTML = "Demo2 start";
 loadReminders();
 
 function loadReminders() 
 {
-	if (window.localStorage.getItem("textarea9AM") !== null
-	    {
-	    	document.getElementById("textarea9AM").value = localStorage.getItem("textarea9AM");
-		document.getElementById("demo2").innerHTML = "textarea9AM local storage NOT null";
-	    }
-	else
-	{
-		document.getElementById("demo2").innerHTML = "textarea9AM local storage null";
-	}
+
 	    
 }
