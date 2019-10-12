@@ -62,15 +62,11 @@ loadReminders();
 
 function loadReminders() 
 {
-	if (windows.localStorage.getItem("textarea9AM") === ""
-	    {
-		document.getElementById("demo2").innerHTML = "textarea9AM local storage null";
-	    }
-	else
+	var taValue = windows.localStorage.getItem('textarea9AM');
+	if (taValue) 
 	{
-	    	document.getElementById("textarea9AM").value = windows.localStorage.getItem("textarea9AM");
+		document.getElementById('textarea9AM').value = taValue;
 		document.getElementById("demo2").innerHTML = "textarea9AM local storage NOT null";
 	}
-	    
 }
 
