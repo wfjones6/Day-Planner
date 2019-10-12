@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three unequal columns that float next to each other */
+.column {
+  float: left;
+  height: 60px;
+}
+
+.left {
+  width: 10%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+.right {
+  width: 10%;
+}
+
+.middle {
+  width: 80%;
+}
+
+/* Clear floats after the columns */
+.row:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button 
+{
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 5px 15px 15px 5px;
+  color: white;
+  background-color: DodgerBlue;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button:hover 
+{
+  background-color: #ddd;
+  color: black;
+}
+
+.textarea 
+{
+  cursor: pointer;
+  width: 100%;
+  height: 60px;
+  padding: 2px;
+  border: none;
+  background-color: pink;
+  font-size: 16px;
+  resize: none;
+}
+
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column left">
+      <label for="text">9:00 AM</label>
+  </div>
+  <div class="column middle">
+    <textarea class="textarea" id="reminder" name="reminder" placeholder=" "></textarea>
+  </div>
+  <div class="column right">
+    <button class="button" type="submit"><i class="fa fa-save"></i></button>
+  </div>
+</div>
+
+</body>
+<script src="questions.js"></script>
+<script src="script.js"></script>
+
+</html>
