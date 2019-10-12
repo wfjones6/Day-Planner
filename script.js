@@ -56,15 +56,3 @@ btn5PM.addEventListener('click', function()
 document.getElementById("demo").innerHTML = "Demo start";
 document.getElementById("demo2").innerHTML = "Demo2 start";
 
-loadReminders();
-
-function loadReminders() 
-{
-		var taValue = windows.localStorage.getItem('textarea9AM');
-	if (taValue) 
-	{
-		document.getElementById('textarea9AM').value = taValue;
-		document.getElementById("demo2").innerHTML = "textarea9AM local storage NOT null";
-	}
-
-}
