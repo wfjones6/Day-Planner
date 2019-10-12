@@ -61,14 +61,14 @@ loadReminders();
 
 function loadReminders() 
 {
-	if (windows.localStorage.getItem("textarea9AM") !== null
+	if (windows.localStorage.getItem("textarea9AM") === ""
 	    {
-	    	document.getElementById("textarea9AM").value = windows.localStorage.getItem("textarea9AM");
-		document.getElementById("demo2").innerHTML = "textarea9AM local storage NOT null";
+		document.getElementById("demo2").innerHTML = "textarea9AM local storage null";
 	    }
 	else
 	{
-		document.getElementById("demo2").innerHTML = "textarea9AM local storage null";
+	    	document.getElementById("textarea9AM").value = windows.localStorage.getItem("textarea9AM");
+		document.getElementById("demo2").innerHTML = "textarea9AM local storage NOT null";
 	}
 	    
 }
