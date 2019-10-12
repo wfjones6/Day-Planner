@@ -54,6 +54,7 @@ btn5PM.addEventListener('click', function()
     	document.getElementById("demo").innerHTML = x;
 })
 
+document.getElementById("demo2").innerHTML = "Demo2 start";
 loadReminders();
 
 function loadReminders() 
