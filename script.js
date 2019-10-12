@@ -3,54 +3,63 @@ btn9AM.addEventListener('click', function()
 {
 	x = document.getElementById("textarea9AM").value;
     	document.getElementById("demo").innerHTML = x;
+	storeReminders();
 })
 
 btn10AM.addEventListener('click', function()
 {
 	x = document.getElementById("textarea10AM").value;
     	document.getElementById("demo").innerHTML = x;
+	storeReminders();
 })
 
 btn11AM.addEventListener('click', function()
 {
 	x = document.getElementById("textarea11AM").value;
     	document.getElementById("demo").innerHTML = x;
+	storeReminders();
 })
 
 btn12PM.addEventListener('click', function()
 {
 	x = document.getElementById("textarea12PM").value;
     	document.getElementById("demo").innerHTML = x;
+	storeReminders();
 })
 
 btn1PM.addEventListener('click', function()
 {
 	x = document.getElementById("textarea1PM").value;
     	document.getElementById("demo").innerHTML = x;
+	storeReminders();
 })
 
 btn2PM.addEventListener('click', function()
 {
 	x = document.getElementById("textarea2PM").value;
     	document.getElementById("demo").innerHTML = x;
+	storeReminders();
 })
 
 btn3PM.addEventListener('click', function()
 {
 	x = document.getElementById("textarea3PM").value;
     	document.getElementById("demo").innerHTML = x;
+	storeReminders();
 })
 
 btn4PM.addEventListener('click', function()
 {
 	x = document.getElementById("textarea4PM").value;
     	document.getElementById("demo").innerHTML = x;
+	storeReminders();
 })
 
 btn5PM.addEventListener('click', function()
 {
 	x = document.getElementById("textarea5PM").value;
     	document.getElementById("demo").innerHTML = x;
+	storeReminders();
 })
 
 storeReminders();
