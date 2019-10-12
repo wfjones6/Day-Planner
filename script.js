@@ -1,62 +1,54 @@
-var timeEl = document.querySelector(".time-rendered");
-// Add an event listener that will handle all buttons added to the time-rendered element
-timeEl.addEventListener("click", getInput, false);
+var x;
+btn9AM.addEventListener('click', function()
+{
+	x = document.getElementById("textarea9AM").value;
+    document.getElementById("demo").innerHTML = x;
+})
 
-displayTimeBlocks();
+btn10AM.addEventListener('click', function()
+{
+	x = document.getElementById("textarea10AM").value;
+    document.getElementById("demo").innerHTML = x;
+})
 
-function getInput(e) {
-    if (e.target !== e.currentTarget) 
-    {
-	var clickedItem = e.target.id;
-        var myNodeName = e.target.nodeName;
-        
-        // If button or button icon clicked
-        if (myNodeName === 'BUTTON' || myNodeName === 'I')
-        {
-          alert("Hello Button " + clickedItem + " " + myNodeName);
-        }
-    }
-    e.stopPropagation();
-}
+btn11AM.addEventListener('click', function()
+{
+	x = document.getElementById("textarea11AM").value;
+    document.getElementById("demo").innerHTML = x;
+})
 
-function displayTimeBlocks() {
-  for (i = 0; i < timeBlocks.length; i++) 
-  {
-    var timeSlot = timeBlocks[i];
+btn12PM.addEventListener('click', function()
+{
+	x = document.getElementById("textarea12PM").value;
+    document.getElementById("demo").innerHTML = x;
+})
 
-    // Create the div to hold the label
-    var timeSlotDiv1 = document.createElement("div");
-    timeSlotDiv1.setAttribute("class", "column left");
+btn1PM.addEventListener('click', function()
+{
+	x = document.getElementById("textarea1PM").value;
+    document.getElementById("demo").innerHTML = x;
+})
 
-    // Create the label
-    var timeSlotLabel = document.createElement("label");
-    timeSlotLabel.textContent = timeSlot.title;
-    timeSlotDiv1.appendChild(timeSlotLabel);
-    timeEl.appendChild(timeSlotDiv1);
+btn2PM.addEventListener('click', function()
+{
+	x = document.getElementById("textarea2PM").value;
+    document.getElementById("demo").innerHTML = x;
+})
 
-    // Create the div to hold the textarea
-    var timeSlotDiv2 = document.createElement("div");
-    timeSlotDiv2.setAttribute("class", "column middle");
-    
-    var timeSlotTextArea = document.createElement("textarea");
-    timeSlotTextArea.id = timeSlot.title;
-    timeSlotTextArea.placeholder = " ";
-    timeSlotTextArea.setAttribute("class", "textarea");
-    timeSlotDiv2.appendChild(timeSlotTextArea);
-    timeEl.appendChild(timeSlotDiv2);
-    
-    var timeSlotDiv3 = document.createElement("div");
-    timeSlotDiv3.setAttribute("class", "column right");
-    
-    var timeSlotButton = document.createElement("BUTTON");
-    timeSlotButton.type = "submit";
-    timeSlotButton.id = i.toString();
-    timeSlotButton.setAttribute("class", "button");
+btn3PM.addEventListener('click', function()
+{
+	x = document.getElementById("textarea3PM").value;
+    document.getElementById("demo").innerHTML = x;
+})
 
-    var timeSlotBtnI = document.createElement("i");
-    timeSlotBtnI.setAttribute("class", "fa fa-save");
-    timeSlotButton.appendChild(timeSlotBtnI);
-    timeSlotDiv3.appendChild(timeSlotButton);
-    timeEl.appendChild(timeSlotDiv3);
-  }
-}
+btn4PM.addEventListener('click', function()
+{
+	x = document.getElementById("textarea4PM").value;
+    document.getElementById("demo").innerHTML = x;
+})
+
+btn5PM.addEventListener('click', function()
+{
+	x = document.getElementById("textarea5PM").value;
+    document.getElementById("demo").innerHTML = x;
+})
