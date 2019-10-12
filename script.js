@@ -1,71 +1,62 @@
-var timeBlockIndex = 0;
+var timeEl = document.querySelector(".time-rendered");
+// Add an event listener that will handle all buttons added to the time-rendered element
+timeEl.addEventListener("click", getInput, false);
+
 displayTimeBlocks();
 
-function displayTimeBlocks() 
-{
-    var timeSlot = timeBlocks[timeBlockIndex];
-    
-    var timeSlotDiv1 = document.createElement("div");
-	document.getElementById("timeSlotDiv1").classList.add("column left");
+function getInput(e) {
+    if (e.target !== e.currentTarget) 
+    {
+	    var clickedItem = e.target.id;
+        var myNodeName = e.target.nodeName;
+        
+        // If button or button icon clicked
+        if (myNodeName === 'BUTTON' || myNodeName === 'I')
+        {
+          alert("Hello Button " + clickedItem + " " + myNodeName);
+        }
+    }
+    e.stopPropagation();
+}
 
+function displayTimeBlocks() {
+  for (i = 0; i < timeBlocks.length; i++) 
+  {
+    var timeSlot = timeBlocks[i];
+
+	// Create the div to hold the label
+    var timeSlotDiv1 = document.createElement("div");
+    timeSlotDiv1.setAttribute("class", "column left");
+
+	// Create the label
     var timeSlotLabel = document.createElement("label");
     timeSlotLabel.textContent = timeSlot.title;
     timeSlotDiv1.appendChild(timeSlotLabel);
+    timeEl.appendChild(timeSlotDiv1);
 
+	// Create the div to hold the textarea
     var timeSlotDiv2 = document.createElement("div");
-	document.getElementById("timeSlotDiv2").classList.add("column middle");
+    timeSlotDiv2.setAttribute("class", "column middle");
     
     var timeSlotTextArea = document.createElement("textarea");
-    timeSlotTextArea.id = "reminder";
+    timeSlotTextArea.id = timeSlot.title;
     timeSlotTextArea.placeholder = " ";
-	document.getElementById("timeSlotTextArea").classList.add("textarea");
+    timeSlotTextArea.setAttribute("class", "textarea");
     timeSlotDiv2.appendChild(timeSlotTextArea);
+    timeEl.appendChild(timeSlotDiv2);
     
     var timeSlotDiv3 = document.createElement("div");
-	document.getElementById("timeSlotDiv3").classList.add("column right");
+    timeSlotDiv3.setAttribute("class", "column right");
     
 	var timeSlotButton = document.createElement("BUTTON");
     timeSlotButton.type = "submit";
-	document.getElementById("timeSlotButton").classList.add("button");
+    timeSlotButton.id = i.toString();
+    timeSlotButton.setAttribute("class", "button");
 
 	var timeSlotBtnI = document.createElement("i");
-    document.getElementById("timeSlotBtnI").classLsit.add("fa fa-save");
+    timeSlotBtnI.setAttribute("class", "fa fa-save");
     timeSlotButton.appendChild(timeSlotBtnI);
     timeSlotDiv3.appendChild(timeSlotButton);
-}
-
-function displayQuestions()
-{
-    questionText.textContent = question.title; 
-    questionDiv.appendChild(questionText)
-
-    for (i = 0; i < question.choices.length; i++) 
-    {
-        var option = document.createElement("button");
-
-        option.textContent = question.choices[i];
-
-        option.setAttribute("class", "option");
-
-        option.addEventListener("click", function(e) 
-        {
-                var optionClicked = (e.target.innerHTML); 
-                if(optionClicked === questions[questionIndex].correctAnswer)
-                {
-                    numCorrect++;
-                    document.getElementById("choice-response").innerHTML = "correct";
-                    displayQuestions(questionIndex++);
-                }
-                else
-                {
-                  secondsRemaining = secondsRemaining-penaltySeconds;
-                  document.getElementById("choice-response").innerHTML = "wrong";
-                  document.getElementById("choice-response").style.color = 'red';
-                  displayQuestions(questionIndex++);
-                }
-        })
-        questionDiv.appendChild(option);
+    timeEl.appendChild(timeSlotDiv3);
     }
-
-    questionsEl.appendChild(questionDiv);
 }
