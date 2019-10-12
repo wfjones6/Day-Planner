@@ -115,4 +115,3 @@ btn5PM.addEventListener('click', function()
 	x = document.getElementById("textarea5PM").value;
     	document.getElementById("demo").innerHTML = x;
 })
-
