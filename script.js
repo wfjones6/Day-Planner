@@ -3,8 +3,6 @@ btn9AM.addEventListener('click', function()
 {
 	x = document.getElementById("textarea9AM").value;
     	document.getElementById("demo").innerHTML = x;
-	windows.localStorage.setItem("textarea9AM", x);
-	loadReminders();
 })
 
 btn10AM.addEventListener('click', function()
@@ -58,3 +56,15 @@ btn5PM.addEventListener('click', function()
 document.getElementById("demo").innerHTML = "Demo start";
 document.getElementById("demo2").innerHTML = "Demo2 start";
 
+loadReminders();
+
+function loadReminders() 
+{
+		var taValue = windows.localStorage.getItem('textarea9AM');
+	if (taValue) 
+	{
+		document.getElementById('textarea9AM').value = taValue;
+		document.getElementById("demo2").innerHTML = "textarea9AM local storage NOT null";
+	}
+
+}
