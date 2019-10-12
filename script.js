@@ -7,7 +7,7 @@ displayTimeBlocks();
 function getInput(e) {
     if (e.target !== e.currentTarget) 
     {
-	    var clickedItem = e.target.id;
+	var clickedItem = e.target.id;
         var myNodeName = e.target.nodeName;
         
         // If button or button icon clicked
@@ -24,17 +24,17 @@ function displayTimeBlocks() {
   {
     var timeSlot = timeBlocks[i];
 
-	// Create the div to hold the label
+    // Create the div to hold the label
     var timeSlotDiv1 = document.createElement("div");
     timeSlotDiv1.setAttribute("class", "column left");
 
-	// Create the label
+    // Create the label
     var timeSlotLabel = document.createElement("label");
     timeSlotLabel.textContent = timeSlot.title;
     timeSlotDiv1.appendChild(timeSlotLabel);
     timeEl.appendChild(timeSlotDiv1);
 
-	// Create the div to hold the textarea
+    // Create the div to hold the textarea
     var timeSlotDiv2 = document.createElement("div");
     timeSlotDiv2.setAttribute("class", "column middle");
     
@@ -48,15 +48,15 @@ function displayTimeBlocks() {
     var timeSlotDiv3 = document.createElement("div");
     timeSlotDiv3.setAttribute("class", "column right");
     
-	var timeSlotButton = document.createElement("BUTTON");
+    var timeSlotButton = document.createElement("BUTTON");
     timeSlotButton.type = "submit";
     timeSlotButton.id = i.toString();
     timeSlotButton.setAttribute("class", "button");
 
-	var timeSlotBtnI = document.createElement("i");
+    var timeSlotBtnI = document.createElement("i");
     timeSlotBtnI.setAttribute("class", "fa fa-save");
     timeSlotButton.appendChild(timeSlotBtnI);
     timeSlotDiv3.appendChild(timeSlotButton);
     timeEl.appendChild(timeSlotDiv3);
-    }
+  }
 }
