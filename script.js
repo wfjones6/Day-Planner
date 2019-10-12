@@ -3,7 +3,7 @@ btn9AM.addEventListener('click', function()
 {
 	x = document.getElementById("textarea9AM").value;
     	document.getElementById("demo").innerHTML = x;
-	//localStorage.setItem("textarea9AM", x);
+	windows.localStorage.setItem("textarea9AM", x);
 })
 
 btn10AM.addEventListener('click', function()
