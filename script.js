@@ -1,8 +1,8 @@
 // Get the header date utilizing Moment.js
-//var dayText = moment().format('dddd');
-//var monthDay = moment().format("MMM Do");
-//var c = dayText + ", " + monthDay;
-//document.getElementById("currentDay").innerHTML = c;
+// var dayText = moment().format('dddd');
+// var monthDay = moment().format("MMM Do");
+// var c = dayText + ", " + monthDay;
+// document.getElementById("currentDay").innerHTML = c;
 
 // If time block values are in local storage, populate them
 var getVal;
@@ -118,8 +118,8 @@ btn5PM.addEventListener('click', function()
 })
 
 var currentHour = 13;
-//var d = new Date();
-//var currentHour = d.getHours();
+// var d = new Date();
+// var currentHour = d.getHours();
 
 setColors("textarea9AM", 9);
 setColors("textarea10AM", 10);
@@ -136,16 +136,16 @@ function setColors(txtArea, blockHour)
 	if (blockHour < currentHour)
 	{
 		document.getElementById(txtArea).style.backgroundColor = "d3d3d3";
-		//document.getElementById(txtArea).className = "textarea past";
+		// document.getElementById(txtArea).className = "textarea past";
 	}
 	else if (blockHour > currentHour)
 	{
 		document.getElementById(txtArea).style.backgroundColor = "77dd77";
-		//document.getElementById(txtArea).className = "textarea future";
+		// document.getElementById(txtArea).className = "textarea future";
 	}
 	else
 	{
 		document.getElementById(txtArea).style.backgroundColor = "ff6961";
-		//document.getElementById(txtArea).className = "textarea present";
+		// document.getElementById(txtArea).className = "textarea present";
 	}
 }
