@@ -61,7 +61,7 @@ if (getVal)
 }
 
 // Create an event listener for each button
-// When the button is clicked it will save the associated textarea to localStorage
+// When the button is clicked it will save the corresponding textarea to localStorage
 var x;
 btn9AM.addEventListener('click', function()
 {
