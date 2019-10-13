@@ -1,3 +1,5 @@
+document.getElementById("currentDay").innerHTML = "Today";
+
 // Get the date utilizing Moment.js
 var a = moment().format('dddd');  
 //var a = moment().toString();
