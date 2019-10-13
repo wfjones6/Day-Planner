@@ -122,7 +122,11 @@ btn5PM.addEventListener('click', function()
 // the lower case 'h' gives you standard (12 hr am/pm) time.
 
 //var currentHour = moment().format('H');
-var currentHour = 13;
+
+var d = new Date();
+var currentHour = d.getHours();
+
+//var currentHour = 13;
 
 setColors("textarea9AM", 9);	// 9AM
 setColors("textarea10AM", 10);	// 10AM
