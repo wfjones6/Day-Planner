@@ -132,17 +132,16 @@ function setColors(txtArea, blockHour)
 {
 	if (blockHour < currentHour)
 	{
-		//document.getElementById(txtArea).style.backgroundColor = "d3d3d3";
-		document.getElementById(txtArea).className = "past";
+		document.getElementById(txtArea).className += "textarea past";
 	}
 	else if (blockHour > currentHour)
 	{
 		//document.getElementById(txtArea).style.backgroundColor = "77dd77";
-		document.getElementById(txtArea).className = "future";
+		document.getElementById(txtArea).className += "textarea future";
 	}
 	else
 	{
 		//document.getElementById(txtArea).style.backgroundColor = "ff6961";
-		document.getElementById(txtArea).className = "present";
+		document.getElementById(txtArea).className += "textarea present";
 	}
 }
