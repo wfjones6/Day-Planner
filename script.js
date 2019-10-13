@@ -117,10 +117,16 @@ btn5PM.addEventListener('click', function()
 	localStorage.setItem("5PM", x);
 })
 
-document.getElementById("textarea9AM").style.backgroundColor = "green";
-
 var currentHour = 13;
 setColors("textarea9AM", 9);
+setColors("textarea10AM", 10);
+setColors("textarea11AM", 11);
+setColors("textarea12PM", 12);
+setColors("textarea1PM", 13);
+setColors("textarea2PM", 14);
+setColors("textarea3PM", 15);
+setColors("textarea4PM", 16);
+setColors("textarea5PM", 17);
 
 function setColors(txtArea, blockHour)
 {
