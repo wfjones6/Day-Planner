@@ -115,12 +115,11 @@ btn5PM.addEventListener('click', function()
 // For example, 1:00pm = 13. The upper case 'H' gives you military (24 hr) time,
 // the lower case 'h' gives you standard (12 hr am/pm) time.
 
+// Get hour using moment.js
 //var currentHour = moment().format('H');
-
+// Get hour using javascript
 var d = new Date();
 var currentHour = d.getHours();
-
-//var currentHour = 13;
 
 setColors("textarea9AM", 9);	// 9AM
 setColors("textarea10AM", 10);	// 10AM
