@@ -3,6 +3,7 @@
 // var monthDay = moment().format("MMM Do");
 // var c = dayText + ", " + monthDay;
 // document.getElementById("currentDay").innerHTML = c;
+document.getElementById("currentDay").innerHTML = "Testing Today";
 
 // If time block values are in local storage, populate them
 var getVal;
