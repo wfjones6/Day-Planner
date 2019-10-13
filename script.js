@@ -117,6 +117,7 @@ btn5PM.addEventListener('click', function()
 	localStorage.setItem("5PM", x);
 })
 
+// Get hours in military time. For example, 1:00pm = 13.
 // var d = new Date();
 // var currentHour = d.getHours();
 var currentHour = 13;
