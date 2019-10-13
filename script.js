@@ -136,10 +136,10 @@ function setColors(txtArea, blockHour)
 	}
 	else if (blockHour > currentHour)
 	{
-		document.getElementById(txtArea).style.backgroundColor = #77dd77;
+		document.getElementById(txtArea).style.backgroundColor = "#77dd77";
 	}
 	else
 	{
-		document.getElementById(txtArea).style.backgroundColor = #ff6961;
+		document.getElementById(txtArea).style.backgroundColor = "#ff6961";
 	}
 }
