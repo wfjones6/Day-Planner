@@ -116,3 +116,20 @@ btn5PM.addEventListener('click', function()
 	x = document.getElementById("textarea5PM").value;
 	localStorage.setItem("5PM", x);
 })
+
+var currentHour = 13;
+function(txtArea, blockHour)
+{
+	if (blockHour < currentHour)
+	{
+		document.getElementById(txtArea).style.backgroundColor = "lightgray";
+	}
+	else if (blockHour === currentHour)
+	{
+		document.getElementById(txtArea).style.backgroundColor = "pink";
+	}
+	else
+	{
+		document.getElementById(txtArea).style.backgroundColor = "green";
+	}
+}
