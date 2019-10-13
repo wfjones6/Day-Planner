@@ -1,8 +1,8 @@
 // Get the header date utilizing Moment.js
-//var dayText = moment().format('dddd');
-//var monthDay = moment().format("MMM Do");
-//var c = dayText + ", " + monthDay;
-//document.getElementById("currentDay").innerHTML = c;
+var dayText = moment().format('dddd');
+var monthDay = moment().format("MMM Do");
+var c = dayText + ", " + monthDay;
+document.getElementById("currentDay").innerHTML = c;
 
 // If time block values are in local storage, populate them
 var getVal;
