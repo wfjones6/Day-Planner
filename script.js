@@ -1,3 +1,5 @@
+<script type="text/javscript">
+	
 // Get the header date utilizing Moment.js
 var dayText = moment().format('dddd');
 var monthDay = moment().format("MMM Do");
