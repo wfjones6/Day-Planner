@@ -118,9 +118,6 @@ btn5PM.addEventListener('click', function()
 })
 
 var currentHour = 13;
-// var d = new Date();
-// var currentHour = d.getHours();
-
 setColors("textarea9AM", 9);
 setColors("textarea10AM", 10);
 setColors("textarea11AM", 11);
