@@ -117,10 +117,9 @@ btn5PM.addEventListener('click', function()
 	localStorage.setItem("5PM", x);
 })
 
-//var currentHour = 13;
-var d = new Date();
-var currentHour = d.getHours();
-document.getElementById("currentDay").innerHTML = currentHour;
+var currentHour = 13;
+//var d = new Date();
+//var currentHour = d.getHours();
 
 setColors("textarea9AM", 9);
 setColors("textarea10AM", 10);
