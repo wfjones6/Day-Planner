@@ -1,8 +1,4 @@
-// Get the date utilizing Moment.js
-//var a = moment().format('dddd');  
-//var a = moment().toString();
-//document.getElementById("currentDay").innerHTML = a;
-
+// Get the header date utilizing Moment.js
 var dayText = moment().format('dddd');
 var monthDay = moment().format("MMM Do");
 var c = dayText + ", " + monthDay;
