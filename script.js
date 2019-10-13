@@ -3,10 +3,10 @@
 //var a = moment().toString();
 //document.getElementById("currentDay").innerHTML = a;
 
-      <script type = "text/JavaScript">
-         var a = moment().format('dddd');
-         document.getElementById("currentDay").innerHTML = a;
-      </script>
+var dayText = moment().format('dddd');
+var monthDay = moment().format("MMM Do");
+var c = dayText + ", " + monthDay;
+document.getElementById("currentDay").innerHTML = c;
 
 // If time block values are in local storage, populate them
 var getVal;
