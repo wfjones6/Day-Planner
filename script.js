@@ -1,3 +1,6 @@
+var a = moment().toString();
+document.getElementById("todaysdate").innerHTML = a;
+
 // If time block values are in local storage, populate them
 var getVal;
 getVal = localStorage.getItem("9AM");
