@@ -132,14 +132,14 @@ function setColors(txtArea, blockHour)
 {
 	if (blockHour < currentHour)
 	{
-		document.getElementById(txtArea).style.backgroundColor = "lightgray";
+		document.getElementById(txtArea).style.backgroundColor = "#d3d3d3";
 	}
 	else if (blockHour > currentHour)
 	{
-		document.getElementById(txtArea).style.backgroundColor = "green";
+		document.getElementById(txtArea).style.backgroundColor = #77dd77;
 	}
 	else
 	{
-		document.getElementById(txtArea).style.backgroundColor = "pink";
+		document.getElementById(txtArea).style.backgroundColor = #ff6961;
 	}
 }
