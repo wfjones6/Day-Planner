@@ -1,8 +1,8 @@
 // Get the header date utilizing Moment.js
-var dayText = moment().format('dddd');
-var monthDay = moment().format("MMM Do");
-var c = dayText + ", " + monthDay;
-document.getElementById("currentDay").innerHTML = c;
+//var dayText = moment().format('dddd');
+//var monthDay = moment().format("MMM Do");
+//var c = dayText + ", " + monthDay;
+//document.getElementById("currentDay").innerHTML = c;
 
 // If time block values are in local storage, populate them
 var getVal;
@@ -120,8 +120,9 @@ btn5PM.addEventListener('click', function()
 // Get hours in military time 0-23 which is equal to 12:00am-11pm. 
 // For example, 1:00pm = 13. The upper case 'H' gives you military (24 hr) time,
 // the lower case 'h' gives you standard (12 hr am/pm) time.
-var currentHour = moment().format('H');
-//var currentHour = 13;
+
+//var currentHour = moment().format('H');
+var currentHour = 13;
 
 setColors("textarea9AM", 9);	// 9AM
 setColors("textarea10AM", 10);	// 10AM
