@@ -121,6 +121,8 @@ btn5PM.addEventListener('click', function()
 var d = new Date();
 var currentHour = d.getHours();
 
+// Call the setColors function to set the background color
+// of each time block.
 setColors("textarea9AM", 9);	// 9AM
 setColors("textarea10AM", 10);	// 10AM
 setColors("textarea11AM", 11);	// 11AM
