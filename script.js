@@ -118,7 +118,9 @@ btn5PM.addEventListener('click', function()
 })
 
 var currentHour = 13;
-function(txtArea, blockHour)
+setColors("textarea9AM", 9);
+
+function setColors(txtArea, blockHour)
 {
 	if (blockHour < currentHour)
 	{
