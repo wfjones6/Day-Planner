@@ -1,6 +1,6 @@
 // Get the date utilizing Moment.js
 var a = moment().toString();
-document.getElementById("todaysdate").innerHTML = a;
+document.getElementById("currentDay").innerHTML = a;
 
 // If time block values are in local storage, populate them
 var getVal;
