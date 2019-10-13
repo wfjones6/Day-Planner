@@ -60,7 +60,6 @@ var x;
 btn9AM.addEventListener('click', function()
 {
 	x = document.getElementById("textarea9AM").value;
-	document.getElementById("demo").innerHTML = x;
 	localStorage.setItem("9AM", x);
 })
 
