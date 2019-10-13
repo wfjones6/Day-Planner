@@ -117,7 +117,10 @@ btn5PM.addEventListener('click', function()
 	localStorage.setItem("5PM", x);
 })
 
+// var d = new Date();
+// var currentHour = d.getHours();
 var currentHour = 13;
+
 setColors("textarea9AM", 9);
 setColors("textarea10AM", 10);
 setColors("textarea11AM", 11);
@@ -132,14 +135,17 @@ function setColors(txtArea, blockHour)
 {
 	if (blockHour < currentHour)
 	{
+		// document.getElementById(txtArea).className = "textarea past";
 		document.getElementById(txtArea).style.backgroundColor = "d3d3d3";
 	}
 	else if (blockHour > currentHour)
 	{
+		// document.getElementById(txtArea).className = "textarea future";
 		document.getElementById(txtArea).style.backgroundColor = "77dd77";
 	}
 	else
 	{
+		// document.getElementById(txtArea).className = "textarea present";
 		document.getElementById(txtArea).style.backgroundColor = "ff6961";
 	}
 }
