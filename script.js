@@ -1,3 +1,4 @@
+// Get the date utilizing Moment.js
 var a = moment().toString();
 document.getElementById("todaysdate").innerHTML = a;
 
