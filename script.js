@@ -117,6 +117,8 @@ btn5PM.addEventListener('click', function()
 	localStorage.setItem("5PM", x);
 })
 
+document.getElementById("textarea9AM").style.backgroundColor = "lightgray";
+
 var currentHour = 13;
 setColors("textarea9AM", 9);
 
