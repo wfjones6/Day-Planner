@@ -120,6 +120,7 @@ btn5PM.addEventListener('click', function()
 //var currentHour = 13;
 var d = new Date();
 var currentHour = d.getHours();
+document.getElementById("currentDay").innerHTML = currentHour;
 
 setColors("textarea9AM", 9);
 setColors("textarea10AM", 10);
