@@ -116,10 +116,10 @@ btn5PM.addEventListener('click', function()
 // the lower case 'h' gives you standard (12 hr am/pm) time.
 
 // Get hour using moment.js
-//var currentHour = moment().format('H');
+var currentHour = moment().format('H');
 // Get hour using javascript
-var d = new Date();
-var currentHour = d.getHours();
+//var d = new Date();
+//var currentHour = d.getHours();
 
 // Call the setColors function to set the background color
 // of each time block.
